@@ -1,6 +1,6 @@
 // Complete Guide to C++ Programming Foundations
 // Challenge 07_10
-// Design a Person Class, by Eduardo Corpeño 
+// Design a Person Class, by Marco
 
 #include <iostream>
 #include <cstdint>
