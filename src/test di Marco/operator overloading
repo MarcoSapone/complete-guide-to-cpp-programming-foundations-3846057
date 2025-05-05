@@ -1,4 +1,4 @@
-// This code demonstrate the operator overload functions
+// This code demonstrate the operator overload functionsf
 #include <iostream>
 using namespace std;
 
