@@ -90,7 +90,7 @@ int main(){
 }
 
 //STACKS
-//A LIFO (Last-In-First-Out) container adapter. It is useful for scenarios where you need to manage data in a stack-like structure.
+//A LIFO (Last-In-First-Out) container adapter. It is useful for scenarios where you need to manage data in a stack-like structure. Like UNDO operations
 //Example: Tracking game states in a sidescroller
 #include <iostream>
 #include <stack>
@@ -115,14 +115,15 @@ int main(){
 #include <queue>
 
 int main(){
-    std::queue<std::string> eventQueue;
-    eventQueue.push("Start Game");
+    std::queue<std::string> eventQueue; // FIFO container for events
+    eventQueue.push("Start Game"); //push function adds elements to the back of queue
     eventQueue.push("Goal Scored");
     eventQueue.push("Half-Time");
 
     while (!eventQueue.empty()){
-        std::cout << "Processing Event: " << eventQueue.front() << std::endl;
-        eventQueue.pop();
+        std::string currentEvent = eventQueue.front(); //the element at the front of the queue
+        std::cout << "Processing Event: " << currentEvent << std::endl;
+        eventQueue.pop();// remove the element at the front of the queue
     }
     return 0;
 }
@@ -145,4 +146,3 @@ int main(){
     }
     return 0;
 
-    
