@@ -5,10 +5,10 @@ using namespace std;
 
 class Box {
    public:
-      double getVolume(void) {
+      double getVolume(void) {                    //getter
          return length * breadth * height;
       }
-      void setLength( double len ) {
+      void setLength( double len ) {              //setter
          length = len;
       }
       void setBreadth( double bre ) {

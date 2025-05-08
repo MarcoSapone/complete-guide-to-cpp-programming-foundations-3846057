@@ -17,13 +17,13 @@ int main(){
         std::cout << std::endl << "File not found!" << std::endl;
     else{
         while (!inFile.eof()){
-            getline(inFile, str);
+            getline(inFile, str);   //get the first line of the file
             std::cout << str << ", ";
             getline(inFile, str);
-            number = stoi(str);
+            number = stoi(str);    // get the second line and return an intergers from a string
             std::cout << number << ", ";
             getline(inFile, str);
-            letter = str[0];
+            letter = str[0];  // get the third line and  get the first letter of the string
             std::cout << letter << std::endl;
         }
         inFile.close();
