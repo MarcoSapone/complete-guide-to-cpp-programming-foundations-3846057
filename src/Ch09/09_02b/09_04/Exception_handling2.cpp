@@ -1,3 +1,5 @@
+/* Example: Handling a division-by-zero exception
+Another common use of exception handling is managing mathematical errors, such as division by zero. Here's a simple example: */
 #include <iostream>
 
 double divide(int a, int b){
